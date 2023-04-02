@@ -24,14 +24,16 @@
 
 4. Search for `wds2g_wds5g_compatible` and change the value from `no` to `yes`.
 
-5. Save the file.
+5. Also search for and edit `wds_show`. Change from `no` to `yes`.
 
-6. Write the `profile` file back to the `profile` partition
+6. Save the file.
+
+7. Write the `profile` file back to the `profile` partition
    
    ```sh
    nvrammanager -w profile -p profile
    ```
 
-7. Reboot the router
+8. Reboot the router
 
-8. After the reboot, load the web interface and observe the WDS summary is in the advanced tab, and the settings are visibile within the advanced settings page.
+9. After the reboot, load the web interface and observe the WDS summary is in the advanced tab, and the settings are visibile within the advanced settings page.
