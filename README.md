@@ -37,9 +37,9 @@ The usb drive will eventually store the dropbear keys as well as the files for t
 
 ### Bootstrapping the usb
 
-1. Log into the router using ssh (you may need to provide a deprecated key algorithm). example:
+1. Log into the router using ssh (you may need to provide a deprecated key algorithm). For example:
 ```sh
-ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 admin@192.168.0.1
+ssh -oHostKeyAlgorithms=+ssh-rsa -oKexAlgorithms=+diffie-hellman-group1-sha1 admin@192.168.0.1
 ```
 2. Use the same password as the web interface login
 3. Once you're logged into the shell, go to the root directory of the usb drive (prepared and installed above)
